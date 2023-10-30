@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(21,18,18);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.sup{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 20px;
+    background-color: rgb(47, 120, 124);
+    border-radius: 0 0 100px 100px;
+    box-shadow: 5px 6px rgba(0, 0, 0, 0.082);
+    width: auto;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    gap: 25px;
+}
+#btn_s,
+#btn_d{
+    white-space:inherit;
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+    border: none;
+    font: normal 17pt Arial;
+    color: white;
+    background-color: rgb(41, 40, 40);
+}
+#user{
+    border-radius: 50%;
+    width: 50px;
+}
+#name{
+    color: white;
+    font-size: 17pt;
+}

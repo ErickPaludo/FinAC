@@ -1,5 +1,5 @@
+@media screen and (max-width: 768px) {
 body{
-  margin-top: 150px;
   background-color: rgb(21,18,18);
   display:flex;
   align-items: center;
@@ -8,16 +8,15 @@ body{
 .container{
     padding:25px;
     background-color: rgb(47, 120, 124);
-    border-radius: 50px;
-    height: 300px;
-    width: 300px;
-    margin-top: 0;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    margin-top: 90px;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     row-gap: 25px;
-    box-shadow: 3px 5px rgba(0, 0, 0, 0.322);
 }
 #user,
 #password{
@@ -26,7 +25,6 @@ body{
     width: 200px; 
     border-radius: 10px;
     border: none;
-    box-shadow: 2px 3px rgba(0, 0, 0, 0.137);
 }
 #login{
     height: 45px;
@@ -35,4 +33,5 @@ body{
     border-radius: 50px;
     background-color: rgb(85, 89, 92);
     color: white;
+}
 }
