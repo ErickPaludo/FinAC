@@ -7,7 +7,7 @@ body{
 }
 .container{
     padding:25px;
-    background-color: rgb(74, 86, 77);
+    background-color: rgb(44, 120, 124);
     border-radius: 50px;
     height: 300px;
     width: 300px;
@@ -17,6 +17,7 @@ body{
     align-items: center;
     justify-content: center;
     row-gap: 25px;
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.199);
 }
 #user,
 #password{
@@ -25,12 +26,23 @@ body{
     width: 200px; 
     border-radius: 10px;
     border: none;
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.199);
+}
+#log{
+  position: fixed;
+  margin-top: 200px;
 }
 #login{
     height: 45px;
     width: 90px;
-    border: 1px solid rgba(0, 0, 0, 0.349);
+    border: none;
     border-radius: 50px;
     background-color: rgb(85, 89, 92);
     color: white;
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.199);
+    cursor: pointer;
+}
+#login:hover{
+    width: 95px;
+    font-weight: bold;
 }
