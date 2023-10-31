@@ -21,18 +21,32 @@ body{
 }
 #user,
 #password{
-    border: 1px solid rgba(0, 0, 0, 0.815);
+    border: none;
     height: 40px;
     width: 200px; 
     border-radius: 10px;
-    border: none;
     box-shadow: 2px 3px rgba(0, 0, 0, 0.137);
 }
 #login{
+    margin-top: 200px;
+    position: fixed;
     height: 45px;
     width: 90px;
     border: 1px solid rgba(0, 0, 0, 0.349);
     border-radius: 50px;
     background-color: rgb(85, 89, 92);
     color: white;
+    cursor: pointer;
+}
+#login:hover{
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+}
+#motivo{
+    font-weight: bold;
+    position: fixed;
+    margin-top: 145px;
+    color: rgb(255, 0, 0);
+    font-size: 14px;
 }
