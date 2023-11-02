@@ -20,6 +20,12 @@ body{
     justify-content: center;
     row-gap: 25px;
 }
+#log{
+    position: fixed;
+    color: white;
+    margin-top: -170px;
+    font-size: 20pt;
+}
 #user,
 #password{
     border: 1px solid rgba(0, 0, 0, 0.815);
@@ -29,7 +35,7 @@ body{
     border: none;
 }
 #login{
-    margin-top: 170px;
+    margin-top: 190px;
     height: 45px;
     width: 90px;
     border: 1px solid rgba(0, 0, 0, 0.349);
