@@ -25,12 +25,13 @@ body {
 }
 
 .container{
+  top:600px;
   position: fixed;
   display: flex;
-  gap: 80px;
+  gap: 50px;
   justify-content: center;
   align-items: center;
-  margin-top: -600px;
+  margin-top: -450px;
 }
 #btn_s,
 #btn_d{
@@ -42,6 +43,8 @@ body {
   font: normal 17pt Arial;
   color: white;
   background-color: rgb(41, 40, 40);
+  box-shadow: 5px 6px rgba(0, 0, 0, 0.185);
+  cursor: pointer;
 }
 #dados_user{
   display: flex;
@@ -62,4 +65,19 @@ body {
   margin-top: -15px;
   color: white;
   font-size: 12pt;
+}
+#btn_s:hover,
+#btn_d:hover{
+background-color: rgb(59, 59, 59);
+animation: mudancaDeCor 5s infinite;
+border: 1px solid rgba(255, 255, 255, 0.151);
+}
+
+@keyframes mudancaDeCor {
+  0% {
+    background-color: rgb(41, 40, 40);
+  }
+  25% {
+    background-color: rgb(59, 59, 59);
+  }
 }

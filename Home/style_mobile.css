@@ -22,12 +22,13 @@ body{
     width: 100%;
 }
 .container{
+    top:600px;
     position: fixed;
     display: flex;
     gap: 15px;
     justify-content: center;
     align-items: center;
-    margin-top: -400px;
+    margin-top: -450px;
 }
 #btn_s,
 #btn_d{
@@ -39,6 +40,7 @@ body{
     font: normal 17pt Arial;
     color: white;
     background-color: rgb(41, 40, 40);
+    box-shadow: 5px 6px rgba(0, 0, 0, 0.185);
 }
 #dados_user{
     display: flex;
@@ -50,10 +52,12 @@ body{
     border-radius: 50%;
     width: 30px;
     height: 30px;
+    box-shadow: 5px 3px rgba(0, 0, 0, 0.082);
 }
 #name{
     color: white;
     font-size: 17pt;
+
 }
 #money{
     margin-top: -15px;

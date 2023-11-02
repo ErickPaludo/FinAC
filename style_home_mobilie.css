@@ -8,12 +8,12 @@ body{
     overflow: hidden;
 }
 .container{
+    margin-top: -100%;
     padding:25px;
     background: linear-gradient(to top, rgb(8, 64, 66), rgb(46, 135, 138));
     border-radius: 20px;
     height: 200px;
     width: 200px;
-    margin-top: -500px;
     display:flex;
     flex-direction: column;
     align-items: center;
