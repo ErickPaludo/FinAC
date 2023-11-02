@@ -1,16 +1,65 @@
-body{
-    margin-top: 150px;
-    background-color: rgb(21,18,18);
-    display:flex;
-    align-items: center;
-    justify-content: center;
-  }
- .sup{
-      padding: 50px;
-      margin-top: -8px;
-      background-color: rgb(44, 120, 124);
-      width: 100%;
-      margin-left: -8px;
-      top: 0; 
-      position: fixed;
-    }
+body {
+  height: 100vh;
+  background: linear-gradient(to top, rgb(19, 43, 44), rgb(6, 6, 7));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Adicionado para centralizar verticalmente o conteúdo */
+}
+
+.sup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgb(15, 99, 102), rgb(51, 171, 175));
+  border-radius: 0 0 100px 100px;
+  box-shadow: 5px 6px rgba(0, 0, 0, 0.082);
+  width: 80%;
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.container{
+  position: fixed;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -600px;
+}
+#btn_s,
+#btn_d{
+  white-space:inherit;
+  width: 150px;
+  height: 150px;
+  border-radius: 25px;
+  border: none;
+  font: normal 17pt Arial;
+  color: white;
+  background-color: rgb(41, 40, 40);
+}
+#dados_user{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+#user{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+#name{
+  color: white;
+  font-size: 17pt;
+}
+#money{
+  margin-top: -15px;
+  color: white;
+  font-size: 12pt;
+}
