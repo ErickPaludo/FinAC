@@ -18,7 +18,7 @@ function background() {
     element.style.transform = "translate(-50%, -50%)"; 
     element.style.width = "80%";
     element.style.height = "80%";
-    element.style.backgroundColor = "white";
+    element.style.backgroundColor = "rgba(36, 33, 33)";
     element.style.borderRadius = "25px";
     document.body.appendChild(element);
     //Fundo 2
@@ -28,14 +28,15 @@ function background() {
     buton.style.display = "flex";
     buton.style.alignItems = "center";
     buton.style.justifyContent = "center";
-    buton.style.top = "60px";  
+    buton.style.top = "55px";  
     buton.style.left = "90%"; 
     buton.style.transform = "translate(-50%, -50%)"; 
     buton.style.width = "35px";
     buton.style.height = "35px";
-    buton.style.backgroundColor = "red";
+    buton.style.backgroundColor = "rgb(22, 22, 22)";
     buton.style.borderRadius = "50%";
-    buton.style.border = "none";
+    buton.style.border = "1px solid rgba(0, 0, 0,0.6)";
+    buton.style.color= "white";
     document.body.appendChild(buton);
     buton.addEventListener("click", function(){
     element.parentNode.removeChild(element);
@@ -46,7 +47,8 @@ function background() {
   }
 
   function Reg_Saldo() {
-background();
+  background();
+
   }
   function Reg_Div(){
     background();
