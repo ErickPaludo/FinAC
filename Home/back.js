@@ -64,8 +64,6 @@ function background() {
     camp.parentNode.removeChild(camp);
     camp2.parentNode.removeChild(camp2);
     camp3.parentNode.removeChild(camp3);
-
-    
   })
   //----------------------------------------
   //ENTRADA DE DADOS
@@ -100,6 +98,8 @@ function background() {
   camp.style.position = "fixed"
   camp.placeholder = "Teste"
   camp.style.top = "300px";
+  camp.style.height = "20px"
+  camp.style.width = "200px"
   //----------------------------------------
   //input 2
 
@@ -107,6 +107,9 @@ function background() {
   camp2.style.position = "fixed"
   camp2.placeholder = "R$ 0,00"
   camp2.style.top = "350px";
+  camp2.style.height = "20px"
+  camp2.style.width = "90px"
+
   //----------------------------------------
   //input 3
   
@@ -114,6 +117,8 @@ function background() {
   camp3.style.position = "fixed"
   camp3.placeholder = ""
   camp3.style.top = "400px";
+  camp3.style.height = "20px"
+  camp3.style.width = "80px"
   //----------------------------------------
 
 }
