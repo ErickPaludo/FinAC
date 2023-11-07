@@ -1,10 +1,26 @@
+var buton = document.createElement("button");
 var camp = document.createElement("input")
 var camp2 = document.createElement("input")
 var camp3 = document.createElement("input")
 var text = document.createElement("p")
 var text2 = document.createElement("p")
 var text3 = document.createElement("p")
+var env = document.createElement("button");
+
 function background() {
+  function Sair() {
+    element.parentNode.removeChild(element);
+    fundo.parentNode.removeChild(fundo);
+    logo.parentNode.removeChild(logo);
+    buton.parentNode.removeChild(buton);
+    text.parentNode.removeChild(text);
+    text2.parentNode.removeChild(text2);
+    text3.parentNode.removeChild(text3);
+    camp.parentNode.removeChild(camp);
+    camp2.parentNode.removeChild(camp2);
+    camp3.parentNode.removeChild(camp3);
+    env.parentNode.removeChild(env);
+}
   // Fundo
   var fundo = document.createElement("div");
   fundo.style.position = "fixed";
@@ -37,7 +53,6 @@ function background() {
   document.body.appendChild(logo);
   //----------------------------------------
   //botão sair
-  var buton = document.createElement("button");
   buton.innerHTML = "X"
   buton.style.position = "fixed";
   buton.style.display = "flex";
@@ -53,18 +68,7 @@ function background() {
   buton.style.border = "1px solid rgba(0, 0, 0,0.6)";
   buton.style.color = "white";
   document.body.appendChild(buton);
-  buton.addEventListener("click", function () {
-    element.parentNode.removeChild(element);
-    fundo.parentNode.removeChild(fundo);
-    logo.parentNode.removeChild(logo);
-    buton.parentNode.removeChild(buton);
-    text.parentNode.removeChild(text);
-    text2.parentNode.removeChild(text2);
-    text3.parentNode.removeChild(text3);
-    camp.parentNode.removeChild(camp);
-    camp2.parentNode.removeChild(camp2);
-    camp3.parentNode.removeChild(camp3);
-  })
+  buton.addEventListener("click", Sair)
   //----------------------------------------
   //ENTRADA DE DADOS
   //----------------------------------------
@@ -120,9 +124,24 @@ function background() {
   camp3.style.height = "20px"
   camp3.style.width = "80px"
   //----------------------------------------
+  //Envio
+  document.body.appendChild(env);
+  env.style.position = "fixed"
+  env.innerHTML = "Enviar"
+  env.style.top = "500px";
+  env.style.height = "20px"
+  env.style.width = "80px"
+  env.addEventListener("click", function () {
+    Sair(); 
+    var conta = document.createElement("p");
+    document.body.appendChild(conta);
+    
+    conta.innerHTML = "oi";
+    conta.style.top = "1000px"
 
+});
 }
-background();
+
 function Reg_Saldo() {
   background();
   camp3.placeholder = "teste"
@@ -131,3 +150,7 @@ function Reg_Div() {
   background();
   camp3.placeholder = "teste2"
 }
+
+
+
+
